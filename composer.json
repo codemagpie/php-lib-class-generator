@@ -1,0 +1,48 @@
+{
+    "name": "codemagpie/class-generator",
+    "type": "library",
+    "description": "A class generator,Support array to generate class files",
+    "keywords": [
+        "codemagpie",
+        "generator",
+        "class",
+        "class generator"
+    ],
+    "authors": [
+        {
+            "name": "lyf",
+            "email": "1191628562@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "codemagpie/utils": "^1.0",
+        "hyperf/utils": "^2.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "prefer-stable": true,
+    "config": {
+        "secure-http": false
+    },
+    "archive": {
+        "exclude": ["/tests", ".php-cs-fixer.php"]
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeMagpie\\ClassGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeMagpie\\ClassGeneratorTest\\": "tests/"
+        }
+    }
+}
