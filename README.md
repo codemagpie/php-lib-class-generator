@@ -29,7 +29,7 @@ ClassGeneratorBuilder::create($config)->gen([
      'choose_classes' => [[
          'name' => 'math',
      ]],
-], 'tests/Stubs', 'Student');
+], 'src/Model', 'Student');
 ```
 Result:
 
